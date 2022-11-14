@@ -51,7 +51,7 @@ namespace Noughts_and_crosses_new
 
                 if (WinCheck(cross))
                 {
-                    MessageBox.Show(currentSymbol + " has won!");
+                    MessageBox.Show("You won!");
                     ClearBoard();
                     currentSymbol = cross;
                     return;
@@ -62,7 +62,7 @@ namespace Noughts_and_crosses_new
 
                 if (WinCheck(nought))
                 {
-                    MessageBox.Show("The computer has won!");
+                    MessageBox.Show("The computer won!");
                     ClearBoard();
                     currentSymbol = cross;
                     return;
@@ -104,9 +104,11 @@ namespace Noughts_and_crosses_new
 
             foreach (Button button in grid)
             {
+                int emptySquares;
+
                 if (button.Text == string.Empty)
                 {
-
+                    break;
                 }
             }
 
